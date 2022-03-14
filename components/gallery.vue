@@ -38,7 +38,7 @@ body {
   padding: 30px;
    z-index: 5;
    position: relative;
-   width: 50vw;
+   width: 90vw;
    margin: 0 auto;
 }
 

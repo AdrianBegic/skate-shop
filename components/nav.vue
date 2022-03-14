@@ -20,6 +20,7 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 50px;
   width:20vw;
 }
 

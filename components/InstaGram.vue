@@ -36,7 +36,6 @@ transition: .3s ease-in-out;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 70px;
   padding: 20px;
 }
 </style>
