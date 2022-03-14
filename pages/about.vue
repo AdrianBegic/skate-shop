@@ -1,8 +1,7 @@
 <template>
   <div class="wrapper-main-about">
     <NavBar />
-    <BackGround />
-    <img id="splash-about" src="@/assets/splash.jpg">
+    <img id="splash-about" src="../assets/shop.png">
     <p class="about-text-one">
       Serving the uptown skate community since 2004. I'm actually not open 24hrs
       a day: its an at home business so I'm open from when I wake up til I fall
@@ -10,18 +9,19 @@
       sure that I am around and book an appointment. If you'd like to know more
       about the shop(and me), please feel free to check the shop IG.
     </p>
+    <InstaGram/>
   </div>
 </template>
 
 <script>
-import BackGround from '@/components/background.vue'
 import NavBar from '@/components/nav.vue'
+import InstaGram from '@/components/InstaGram.vue'
 
 export default {
   name: 'AboutPage',
   components: {
-    BackGround,
     NavBar,
+    InstaGram,
   },
 }
 </script>
@@ -35,10 +35,10 @@ export default {
 .about-text-one{
     position:relative;
     z-index: 3;
-    width: 60vw;
+    width: 50vw;
     text-align: center;
     margin: 0 auto;
-    font-size: 2em;
+    font-size: 3em;
     padding: 5%;
     line-height: 1.5;
 }
@@ -46,9 +46,10 @@ export default {
 #splash-about{
   position: relative;
   z-index: 3;
-  width: 70vw;
+  width: 50vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
 }
 </style>

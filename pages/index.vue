@@ -1,59 +1,68 @@
 <template>
-  <div class="wrapper-main-home">
-    <NavBar/>
-    <BackGround/>
-    <img id="splash" src="@/assets/shop.png">
+  <div :class="{ loader: true, fadeout: !isLoading }">
+    <img id="logo" src="../assets/logo.webp">
+    <NuxtLink id="enter" to="/home">ENTER</NuxtLink>
   </div>
 </template>
 
 <script>
-import BackGround from '../components/background.vue'
-import NavBar from '../components/nav.vue'
-
 export default {
-  name: 'HomePage',
-  components: {
-    BackGround,
-    NavBar,
-  },
-}
+  name: "SplashPage",
+};
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Syne+Mono&display=swap');
-
-
-*{
-  font-family: 'Special Elite', cursive;
+<style scoped>
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
 }
 
-body {
-  margin: 0;
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+
+
+#enter {
+  font-size: 3em;
 }
 
-a:hover {
-  color: #555;
+.loader {
+  background-color: #fff;
+  bottom: 0;
+  color: white;
+  display: block;
+  left: 0;
+  overflow: hidden;
+  padding-top: 10vh;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 999;
 }
 
-.wrapper-main-home {
-  height: 200vh;
-  width: 100%;
+
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
-#splash{
+ #logo {
   position: relative;
-  z-index: 3;
-  width: 70vw;
+  z-index:2;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width:40vw;
+  padding: 50px;
 }
 
-/* notes - new logo - cleaner text - more images - "contact" page */
 
 </style>

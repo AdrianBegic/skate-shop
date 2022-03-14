@@ -2,9 +2,6 @@
     <div>
         <img id="logo" src="@/assets/logo.webp"> 
     <div class="nav">
-    <NuxtLink class="menu" to="/about">ABOUT</NuxtLink>
-    <NuxtLink class="menu" to="/">HOME</NuxtLink>
-    <NuxtLink class="menu" to="/gallery">GALLERY</NuxtLink>
     </div>
 </div>
 </template>
@@ -22,12 +19,13 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:50vw;
+  width:40vw;
 }
 
 .nav{
   display: block;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding-top: 50px;
   align-content: center;
   text-align: center;
   width: 50vw;
@@ -38,6 +36,6 @@ export default {
   z-index:3;
   text-align: center;
   font-size: 2.5em;
-  padding: 0 20px;
+  padding: 0 80px;
 }
 </style>
