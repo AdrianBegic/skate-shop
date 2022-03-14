@@ -22,8 +22,6 @@ describe('NavBar component', () => {
             expect(wrapper).toMatchSnapshot();
         });
 
-        it('should mount links with proper paths', () => {
-            const
-        })
+        
     })
 })
