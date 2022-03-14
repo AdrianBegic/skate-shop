@@ -2,6 +2,10 @@
   <div :class="{ loader: true, fadeout: !isLoading }">
     <img id="logo" src="../assets/logo.webp">
     <NuxtLink id="enter" to="/home">ENTER</NuxtLink>
+    <div class="footer">
+      <a  id="ig" href="https://www.instagram.com/terminalnyc/"><img id="ig" src="../assets/87390.png"></a>
+<a href="https://www.instagram.com/terminalnyc/" id="ig-text">TERMINAL NYC</a>
+</div>
   </div>
 </template>
 
@@ -32,8 +36,7 @@ export default {
 
 .loader {
   background-color: #fff;
-  bottom: 0;
-  color: white;
+  color: #fff;
   display: block;
   left: 0;
   overflow: hidden;
@@ -64,5 +67,39 @@ export default {
   padding: 50px;
 }
 
+ #ig {
+  z-index: 5;
+ position: relative;
+  width: 2.5vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
 
+#ig:hover{
+filter: contrast(200%);
+transition: .3s ease-in-out;
+}
+
+
+#ig-text {
+  font-size: 1em;
+  z-index: 5;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  padding: 20px;
+}
+
+.footer {
+  position: relative;
+  margin: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>

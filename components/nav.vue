@@ -2,6 +2,7 @@
     <div>
         <img id="logo" src="@/assets/logo.webp"> 
     <div class="nav">
+    <nuxt-link to="/about"></nuxt-link>
     </div>
 </div>
 </template>
@@ -19,7 +20,7 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:40vw;
+  width:20vw;
 }
 
 .nav{
@@ -29,13 +30,8 @@ export default {
   align-content: center;
   text-align: center;
   width: 50vw;
+  font-size: 3em;
 }
 
-.menu{
-  position: relative;
-  z-index:3;
-  text-align: center;
-  font-size: 2.5em;
-  padding: 0 80px;
-}
+
 </style>

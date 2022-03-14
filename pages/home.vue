@@ -2,7 +2,6 @@
   <div>
     <div class="wrapper-main-home">
       <NavBar />
-      <div class="parallax-home"></div>
       <GalleryComponent />
       <InstaGram />
     </div>
@@ -69,17 +68,7 @@ a:hover {
   width: 100%;
 }
 
-.parallax-home {
-  background-image: url('../assets/concrete.jpg');
-  height: 50vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /* notes - new logo - cleaner text - more images - "contact" page */
 </style>

@@ -15,7 +15,7 @@ export default {
    #ig {
   z-index: 5;
   position: relative;
-  width: 5vw;
+  width: 4vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
